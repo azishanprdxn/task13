@@ -9,6 +9,82 @@
 </head>
 
 <body>
+  <!-- Images used to open the lightbox -->
+  <section class="wrapper">
+    <h1>Click on an image to Open Modal</h1>
+    <div class="flex-container">
+      <figure class="flexbox">
+        <img src="https://via.placeholder.com/1920x1080?text=Image1" onclick="openModal(); currentSlide(1)"
+          class="hover-shadow" title="Image 1" alt="Image 1">
+      </figure>
+      <figure class="flexbox">
+        <img src="https://via.placeholder.com/1920x1080?text=Image2" onclick="openModal(); currentSlide(2)"
+          class="hover-shadow" title="Image 2" alt="Image 2">
+      </figure>
+      <figure class="flexbox">
+        <img src="https://via.placeholder.com/1920x1080?text=Image3" onclick="openModal(); currentSlide(3)"
+          class="hover-shadow" title="Image 3" alt="Image 3">
+      </figure>
+      <figure class="flexbox">
+        <img src="https://via.placeholder.com/1920x1080?text=Image4" onclick="openModal(); currentSlide(4)"
+          class="hover-shadow" title="Image 4" alt="Image 4">
+      </figure>
+    </div>
+  </section>
+
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+
+      <!-- Slides / Carousel -->
+      <figure class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="https://via.placeholder.com/1920x1080?text=Image1" alt="Image 1">
+      </figure>
+      <figure class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="https://via.placeholder.com/1920x1080?text=Image2" alt="Image 2">
+      </figure>
+      <figure class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="https://via.placeholder.com/1920x1080?text=Image3" alt="Image 3">
+      </figure>
+      <figure class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="https://via.placeholder.com/1920x1080?text=Image4" alt="Image 4">
+      </figure>
+
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+
+      <!-- Image controls -->
+      <div class="flex-container">
+        <figure class="flexbox">
+          <img class="demo" src="https://via.placeholder.com/1920x1080?text=Image1"
+            onclick="currentSlide(1)" alt="Image 1">
+        </figure>
+        <figure class="flexbox">
+          <img class="demo" src="https://via.placeholder.com/1920x1080?text=Image2"
+            onclick="currentSlide(2)" alt="Image 2">
+        </figure>
+        <figure class="flexbox">
+          <img class="demo" src="https://via.placeholder.com/1920x1080?text=Image3"
+            onclick="currentSlide(3)" alt="Image 3">
+        </figure>
+        <figure class="flexbox">
+          <img class="demo" src="https://via.placeholder.com/1920x1080?text=Image4"
+            onclick="currentSlide(4)" alt="Image 4">
+        </figure>
+      </div>
+    </div>
+  </div>
 
   <script src="./assets/js/script.js"></script>
 </body>
